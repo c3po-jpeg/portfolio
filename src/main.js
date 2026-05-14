@@ -1,34 +1,30 @@
 import './style.css'
 
-document.querySelector('#app').innerHTML = `
-  <main class="min-h-screen bg-zinc-900 text-white p-8">
-    
-    <section class="max-w-5xl mx-auto border border-zinc-700 p-10">
-      
-      <p class="text-orange-400 text-sm mb-4 tracking-widest">
-        SYSTEMS PROGRAMMER
-      </p>
+const tabs = document.querySelectorAll('.project-tab')
+const projects = document.querySelectorAll('.project-content')
 
-      <h1 class="text-5xl font-bold mb-6">
-        Victor K
-      </h1>
+tabs.forEach((tab) => {
 
-      <p class="text-zinc-400 max-w-2xl leading-relaxed">
-        Graphics programming, Vulkan rendering, WebRTC collaboration systems,
-        and low-level software engineering.
-      </p>
+  tab.addEventListener('click', () => {
 
-      <div class="flex gap-4 mt-8">
-        <button class="border border-orange-500 px-5 py-3 hover:bg-orange-500 hover:text-black transition">
-          Projects
-        </button>
+    const target = tab.dataset.project
 
-        <button class="border border-zinc-600 px-5 py-3 hover:border-white transition">
-          Contact
-        </button>
-      </div>
+    // remove active state
+    tabs.forEach(t => t.classList.remove('active-tab'))
 
-    </section>
+    // hide all projects
+    projects.forEach(project => {
+      project.classList.add('hidden')
+    })
 
-  </main>
-`
+    // activate clicked tab
+    tab.classList.add('active-tab')
+
+    // show selected project
+    document
+      .getElementById(target)
+      .classList.remove('hidden')
+
+  })
+
+})

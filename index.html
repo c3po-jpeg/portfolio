@@ -1,14 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Victor Portfolio</title>
-  </head>
 
-  <body>
-    <div id="app"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  <title>Portfolio</title>
+</head>
+
+<body class="bg-zinc-900 text-white">
+
+  <!-- PAGE WRAPPER -->
+  <div class="min-h-screen">
+
+    <!-- TOP BAR -->
+    <header class="border-b border-zinc-800 sticky top-0 bg-zinc-900/90 backdrop-blur">
+
+      <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <!-- LEFT -->
+        <div>
+          <h1 class="text-lg font-bold tracking-wide">
+            Victor Gakuo
+          </h1>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex gap-6 text-sm text-zinc-300">
+
+          <a href="#projects" class="hover:text-white transition">
+            Projects
+          </a>
+
+          <a href="#skills" class="hover:text-white transition">
+            Skills
+          </a>
+
+          <a href="#about" class="hover:text-white transition">
+            About
+          </a>
+
+          <a href="https://github.com/C3P0-png" class="text-zinc-300 hover:text-white transition">
+            <img src="/src/assets/icons/github.svg" alt="GitHub" class="w-6 h-6" />
+          </a>
+
+
+        </div>
+
+      </nav>
+
+    </header>
+
+    <!-- HERO -->
+    <main>
+
+      <section class="max-w-7xl mx-auto px-6 py-24">
+
+        <div class="max-w-3xl">
+
+          <p class="text-orange-400 text-sm tracking-[0.2em] mb-4">
+            SYSTEMS PROGRAMMER • GRAPHICS • REALTIME SYSTEMS
+          </p>
+
+          <p class="text-3xl font-bold leading-tight mb-6">
+            Building realtime graphics, simulation,
+            and communication systems.
+          </p>
+
+          <p class="text-zinc-400 text-lg leading-relaxed">
+            Focused on Vulkan rendering, systems programming and interactive realtime applications.
+          </p>
+
+          <section id="projects" class="py-3">
+            <div class="mb-12">
+
+              <p class="text-orange-400 text-sm tracking-[0.2em] mb-4">
+                FEATURED WORK
+              </p>
+
+              <h2 class="text-4xl font-bold">
+                Projects
+              </h2>
+
+            </div>
+
+            <!-- TAB BAR -->
+
+            <div class="flex border-b border-zinc-800 mb-10">
+
+              <button class="project-tab active-tab" data-project="physics">
+                Physics Engine
+              </button>
+
+              <button class="project-tab" data-project="viewer">
+                3D Viewer
+              </button>
+
+              <button class="project-tab" data-project="webrtc">
+                Video Conferencing
+              </button>
+
+            </div>
+
+            <!-- PROJECT CONTENT -->
+
+            <div>
+
+              <!-- PHYSICS -->
+
+              <div id="physics" class="project-content">
+
+                <h3 class="text-3xl font-bold mb-4">
+                  Vulkan Physics Engine
+                </h3>
+
+                <p class="text-zinc-400 max-w-3xl leading-relaxed mb-8">
+                  Experimental realtime physics and rendering engine
+                  built in Rust using Vulkan.
+                </p>
+
+                <div class="border border-zinc-800 flex items-center justify-center text-zinc-500">
+                  <div class="grid grid-cols-2 gap-12 p-2 items-center">
+
+                    <!-- IMAGE -->
+
+                    <div class="border border-zinc-800 overflow-hidden">
+                      <img src="src/assets/physics_engine/sample_0.png" class="w-full h-full object-cover" />
+                    </div>
+
+                    <!-- TEXT -->
+
+                    <div>
+                      <p class="text-orange-400 text-sm mb-3">
+                        Vulkan / Rust
+                      </p>
+
+                      <h3 class="text-3xl font-bold mb-6">
+                        Physics Engine
+                      </h3>
+
+                      <p class="text-zinc-400 items-center leading-relaxed mb-6">
+                        Experimental realtime rendering and simulation
+                        engine built with Vulkan(ash).
+                      </p>
+
+                      <a href="https://github.com/C3P0-png/enceladus"
+                        class="border border-zinc-700 px-5 py-3 inline-block hover:border-white transition">
+                        Repository
+                      </a>
+
+                    </div>
+
+                    <!-- TEXT -->
+
+                    <div>
+                      ...
+                    </div>
+
+                    <!-- IMAGE -->
+
+                    <div class="border border-zinc-800 overflow-hidden">
+
+                      <img src="src/assets/physics_engine/sample_1.png" class="w-full h-full object-cover" />
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- VIEWER -->
+
+              <div id="viewer" class="project-content hidden">
+
+                <h3 class="text-3xl font-bold mb-4">
+                  WebGPU 3D Viewer
+                </h3>
+
+                <p class="text-zinc-400 max-w-3xl leading-relaxed mb-8">
+                  Interactive 3D viewer written in Rust using WebGPU.
+                </p>
+
+                <div class="border border-zinc-800 h-[400px] flex items-center justify-center text-zinc-500">
+                  Screenshot / Video Placeholder
+                </div>
+
+              </div>
+
+              <!-- WEBRTC -->
+
+              <div id="webrtc" class="project-content hidden">
+
+                <h3 class="text-3xl font-bold mb-4">
+                  Video Conferencing Platform
+                </h3>
+
+                <p class="text-zinc-400 max-w-3xl leading-relaxed mb-8">
+                  Collaborative conferencing platform using
+                  React, Django, Redis, WebRTC, and WebSockets.
+                </p>
+
+                <div class="border border-zinc-800 h-[400px] flex items-center justify-center text-zinc-500">
+                  Screenshot / Video Placeholder
+                </div>
+
+              </div>
+
+            </div>
+          </section>
+
+          <section id="about" class="py-3">
+            <h2 class="text-lg">
+              About me
+            </h2>
+
+          </section>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
