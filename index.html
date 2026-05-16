@@ -14,7 +14,7 @@
   <div class="min-h-screen">
 
     <!-- TOP BAR -->
-    <header class="border-b border-zinc-800 sticky top-0 bg-zinc-900/90 backdrop-blur">
+    <header class="sticky top-0 z-50 border-b border-zinc-800 bg-zinc-900/90 backdrop-blur">
 
       <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
@@ -40,9 +40,14 @@
             About
           </a>
 
-          <a href="https://github.com/C3P0-png" class="text-zinc-300 hover:text-white transition">
-            <img src="/src/assets/icons/github.svg" alt="GitHub" class="w-6 h-6" />
+          <!-- <a href="https://www.linkedin.com/in/victor-gakuo-91b71636a/"
+            class="text-zinc-300 hover:text-white transition">
+            <img src="/src/assets/icons/linkedin.svg" alt="GitHub" class="w-6 h-6" />
           </a>
+
+          <a href="https://github.com/c3po-jpeg" class="text-zinc-300 hover:text-white transition">
+            <img src="/src/assets/icons/github.svg" alt="GitHub" class="w-6 h-6" />
+          </a> -->
 
 
         </div>
@@ -54,17 +59,29 @@
     <!-- HERO -->
     <main>
 
-      <section class="max-w-7xl mx-auto px-6 py-24">
+      <section class="relative overflow-hidden">
 
-        <div class="max-w-3xl">
+        <!-- BACKGROUND SHAPES -->
+
+        <div class="absolute inset-0 pointer-events-none">
+
+          <div class="blob blob-orange"></div>
+          <div class="blob blob-green"></div>
+
+        </div>
+
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 py-24">
+          <p>
+
+          </p>
 
           <p class="text-orange-400 text-sm tracking-[0.2em] mb-4">
             SYSTEMS PROGRAMMER • GRAPHICS • REALTIME SYSTEMS
           </p>
 
           <p class="text-3xl font-bold leading-tight mb-6">
-            Building realtime graphics, simulation,
-            and communication systems.
+            Building realtime graphics, simulation, and communication systems.
           </p>
 
           <p class="text-zinc-400 text-lg leading-relaxed">
@@ -86,19 +103,22 @@
 
             <!-- TAB BAR -->
 
-            <div class="flex border-b border-zinc-800 mb-10">
+            <div class="flex justify-center mb-10">
+              <div class="inline-flex border border-zinc-800 rounded-sm overflow-hidden">
 
-              <button class="project-tab active-tab" data-project="physics">
-                Physics Engine
-              </button>
+                <button class="project-tab active-tab px-4 py-2 text-sm text-zinc-400 transition"
+                  data-project="physics">
+                  Physics Engine
+                </button>
 
-              <button class="project-tab" data-project="viewer">
-                3D Viewer
-              </button>
+                <button class="project-tab px-4 py-2 text-sm text-zinc-400 transition" data-project="viewer">
+                  3D Viewer
+                </button>
 
-              <button class="project-tab" data-project="webrtc">
-                Video Conferencing
-              </button>
+                <button class="project-tab px-4 py-2 text-sm text-zinc-400 transition" data-project="webrtc">
+                  Video Conferencing
+                </button>
+              </div>
 
             </div>
 
@@ -108,112 +128,90 @@
 
               <!-- PHYSICS -->
 
-              <div id="physics" class="project-content">
+              <div id="physics" class="project-content text-center">
 
-                <h3 class="text-3xl font-bold mb-4">
-                  Vulkan Physics Engine
-                </h3>
+                <a href="https://github.com/c3po-jpeg/deimos" target="_blank" class="block w-full max-w-3xl mx-auto">
 
-                <p class="text-zinc-400 max-w-3xl leading-relaxed mb-8">
-                  Experimental realtime physics and rendering engine
-                  built in Rust using Vulkan.
-                </p>
+                  <div class="
+                            project-preview
+                            overflow-hidden
+                            border 
+                            rounded-sm
+                            border-zinc-800
+                            bg-zinc-900">
 
-                <div class="border border-zinc-800 flex items-center justify-center text-zinc-500">
-                  <div class="grid grid-cols-2 gap-12 p-2 items-center">
+                    <img src="/src/assets/physics.png" class="
+                          w-full
+                          aspect-video
+                          object-cover
+                          hover:scale-105
+                          transition
+                          duration-300" />
 
-                    <!-- IMAGE -->
-
-                    <div class="border border-zinc-800 overflow-hidden">
-                      <img src="src/assets/physics_engine/sample_0.png" class="w-full h-full object-cover" />
-                    </div>
-
-                    <!-- TEXT -->
-
-                    <div>
-                      <p class="text-orange-400 text-sm mb-3">
-                        Vulkan / Rust
-                      </p>
-
-                      <h3 class="text-3xl font-bold mb-6">
-                        Physics Engine
-                      </h3>
-
-                      <p class="text-zinc-400 items-center leading-relaxed mb-6">
-                        Experimental realtime rendering and simulation
-                        engine built with Vulkan(ash).
-                      </p>
-
-                      <a href="https://github.com/C3P0-png/enceladus"
-                        class="border border-zinc-700 px-5 py-3 inline-block hover:border-white transition">
-                        Repository
-                      </a>
-
-                    </div>
-
-                    <!-- TEXT -->
-
-                    <div>
-                      ...
-                    </div>
-
-                    <!-- IMAGE -->
-
-                    <div class="border border-zinc-800 overflow-hidden">
-
-                      <img src="src/assets/physics_engine/sample_1.png" class="w-full h-full object-cover" />
-
-                    </div>
                   </div>
-                </div>
+
+                </a>
 
               </div>
 
               <!-- VIEWER -->
 
-              <div id="viewer" class="project-content hidden">
+              <div id="viewer" class="project-content hidden text-center">
 
-                <h3 class="text-3xl font-bold mb-4">
-                  WebGPU 3D Viewer
-                </h3>
+                <a href="https://github.com/c3po-jpeg/callisto" target="_blank" class="block w-full max-w-3xl mx-auto">
 
-                <p class="text-zinc-400 max-w-3xl leading-relaxed mb-8">
-                  Interactive 3D viewer written in Rust using WebGPU.
-                </p>
+                  <div class="
+                            project-preview
+                            overflow-hidden
+                            border 
+                            rounded-sm
+                            border-zinc-800
+                            bg-zinc-900">
 
-                <div class="border border-zinc-800 h-[400px] flex items-center justify-center text-zinc-500">
-                  Screenshot / Video Placeholder
-                </div>
+                    <img src="/src/assets/viewer.png" class="
+                          w-full
+                          aspect-video
+                          object-cover
+                          hover:scale-105
+                          transition
+                          duration-300" />
+
+                  </div>
+
+                </a>
 
               </div>
 
               <!-- WEBRTC -->
 
-              <div id="webrtc" class="project-content hidden">
+              <div id="webrtc" class="project-content hidden text-center">
 
-                <h3 class="text-3xl font-bold mb-4">
-                  Video Conferencing Platform
-                </h3>
+                <a href="https://github.com/c3po-jpeg/wemeet-frontend" target="_blank"
+                  class="block w-full max-w-3xl mx-auto">
 
-                <p class="text-zinc-400 max-w-3xl leading-relaxed mb-8">
-                  Collaborative conferencing platform using
-                  React, Django, Redis, WebRTC, and WebSockets.
-                </p>
+                  <div class="
+                            project-preview
+                            overflow-hidden
+                            border 
+                            rounded-sm
+                            border-zinc-800
+                            bg-zinc-900">
 
-                <div class="border border-zinc-800 h-[400px] flex items-center justify-center text-zinc-500">
-                  Screenshot / Video Placeholder
-                </div>
+                    <img src="/src/assets/wemeet.png" class="
+                          w-full
+                          aspect-video
+                          object-cover
+                          hover:scale-105
+                          transition
+                          duration-300" />
+
+                  </div>
+
+                </a>
 
               </div>
 
             </div>
-          </section>
-
-          <section id="about" class="py-3">
-            <h2 class="text-lg">
-              About me
-            </h2>
-
           </section>
 
         </div>
@@ -221,6 +219,50 @@
       </section>
 
     </main>
+
+    <footer class="border-t border-zinc-800">
+
+      <div class="
+      max-w-7xl
+      mx-auto
+      px-6
+      py-5
+      flex
+      items-center
+      justify-between
+    ">
+
+        <p class="text-zinc-500 text-sm">
+          Victor Gakuo
+        </p>
+
+        <div class="flex items-center gap-6">
+
+          <!-- GITHUB -->
+
+          <a href="https://github.com/c3po-jpeg" target="_blank" class="text-zinc-500 hover:text-white transition">
+            <img src="/src/assets/icons/github.svg" alt="GitHub" class="w-8 h-8" />
+          </a>
+
+          <!-- LINKEDIN -->
+
+          <a href="https://www.linkedin.com/in/victor-gakuo-91b71636a/"
+            class="text-zinc-500 hover:text-white transition">
+            <img src="/src/assets/icons/linkedin.svg" alt="LinkedIn" class="w-8 h-8" />
+          </a>
+
+          <!-- EMAIL -->
+
+          <a href="mailto:vickkaniu0@gmail.com" class="text-zinc-500 hover:text-white transition">
+            <img src="/src/assets/icons/gmail.png" alt="Email" class="w-8 h-8" />
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </footer>
 
   </div>
 
