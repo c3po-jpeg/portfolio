@@ -13,7 +13,6 @@ body {
 .project-tab {
   padding: 1rem 1.5rem;
   border-bottom: 2px solid transparent;
-  border-right: 1px solid #27272a;
   color: #a1a1aa;
   transition: all 0.2s ease;
 
@@ -25,10 +24,6 @@ body {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-}
-
-.project-tab:last-child {
-  border-right: none;
 }
 
 .project-tab:hover {
