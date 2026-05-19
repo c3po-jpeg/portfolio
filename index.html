@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Portfolio</title>
+  <script type="module" crossorigin src="/portfolio/assets/index-DcgIPGwJ.js"></script>
+  <link rel="stylesheet" crossorigin href="/portfolio/assets/index-DhR1dGFM.css">
+</head>
+
+<body class="bg-zinc-900 text-white">
+
+  <!-- PAGE WRAPPER -->
+  <div class="min-h-screen">
+
+    <!-- TOP BAR -->
+    <header class="sticky top-0 z-50 border-b border-zinc-800 bg-zinc-900/90 backdrop-blur">
+
+      <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <!-- LEFT -->
+        <div class="flex items-center gap-3">
+          <div>
+            <img src="/portfolio/icons/bussiness-man.png" alt="profile" class="w-10 h-10" />
+          </div>
+
+          <h1 class="text-lg font-bold tracking-wide">
+            Victor Gakuo
+          </h1>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex gap-6 text-sm text-zinc-300">
+
+          <a href="#projects" class="hover:text-white transition">
+            Projects
+          </a>
+
+          <a href="/about.html" class="hover:text-white transition">
+            About
+          </a>
+
+        </div>
+
+      </nav>
+
+    </header>
+
+    <!-- HERO -->
+    <main>
+
+      <section class="relative overflow-hidden">
+
+        <!-- BACKGROUND SHAPES -->
+
+        <div class="absolute inset-0 pointer-events-none">
+
+          <div class="blob blob-orange"></div>
+          <div class="blob blob-green"></div>
+
+        </div>
+
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 py-24">
+          <p>
+
+          </p>
+
+          <p class="text-orange-400 text-sm tracking-[0.2em] mb-4">
+            SYSTEMS PROGRAMMER • GRAPHICS • REALTIME SYSTEMS
+          </p>
+
+          <p class="text-3xl font-bold leading-tight mb-6">
+            Building realtime graphics, simulation, and communication systems.
+          </p>
+
+          <p class="text-zinc-400 text-lg leading-relaxed">
+            Welcome to my page! 
+            I like making cool things on the screen.
+          </p>
+          <p class="text-zinc-400 text-lg leading-relaxed">
+            Focused on Vulkan rendering, systems programming and interactive realtime applications.
+          </p>
+          <section id="projects" class="py-3 ">
+            <div class="mb-5 mt-12 text-center">
+
+              <h2 class="text-orange-400 text-3xl font-bold">
+                Projects
+              </h2>
+
+            </div>
+
+            <!-- TAB BAR -->
+
+            <div class="flex justify-center mb-10">
+              <div class="inline-flex border border-zinc-800 rounded-sm overflow-hidden">
+
+                <button class="project-tab active-tab px-4 py-2 text-sm text-zinc-400 transition"
+                  data-project="physics">
+                  Physics Engine
+                </button>
+
+                <button class="project-tab px-4 py-2 text-sm text-zinc-400 transition" data-project="viewer">
+                  3D Viewer
+                </button>
+
+                <button class="project-tab px-4 py-2 text-sm text-zinc-400 transition" data-project="webrtc">
+                  Video Conferencing
+                </button>
+              </div>
+
+            </div>
+
+            <!-- PROJECT CONTENT -->
+
+            <div>
+
+              <!-- PHYSICS -->
+
+              <div id="physics" class="project-content text-center">
+
+                <a href="https://github.com/c3po-jpeg/deimos" target="_blank" class="block w-full max-w-3xl mx-auto">
+
+                  <div class="
+                            project-preview
+                            overflow-hidden
+                            border 
+                            rounded-sm
+                            border-zinc-800
+                            bg-zinc-900">
+
+                    <img src="/portfolio/physics.png" class="
+                          w-full
+                          aspect-video
+                          object-cover
+                          hover:scale-105
+                          transition
+                          duration-300" />
+
+                  </div>
+
+                </a>
+
+              </div>
+
+              <!-- VIEWER -->
+
+              <div id="viewer" class="project-content hidden text-center">
+
+                <a href="https://github.com/c3po-jpeg/callisto" target="_blank" class="block w-full max-w-3xl mx-auto">
+
+                  <div class="
+                            project-preview
+                            overflow-hidden
+                            border 
+                            rounded-sm
+                            border-zinc-800
+                            bg-zinc-900">
+
+                    <img src="/portfolio/viewer.png" class="
+                          w-full
+                          aspect-video
+                          object-cover
+                          hover:scale-105
+                          transition
+                          duration-300" />
+
+                  </div>
+
+                </a>
+
+              </div>
+
+              <!-- WEBRTC -->
+
+              <div id="webrtc" class="project-content hidden text-center">
+
+                <a href="https://github.com/c3po-jpeg/wemeet-frontend" target="_blank"
+                  class="block w-full max-w-3xl mx-auto">
+
+                  <div class="
+                            project-preview
+                            overflow-hidden
+                            border 
+                            rounded-sm
+                            border-zinc-800
+                            bg-zinc-900">
+
+                    <img src="/portfolio/wemeet.png" class="
+                          w-full
+                          aspect-video
+                          object-cover
+                          hover:scale-105
+                          transition
+                          duration-300" />
+
+                  </div>
+
+                </a>
+
+              </div>
+
+            </div>
+          </section>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="border-t border-zinc-800">
+
+      <div class="
+      max-w-7xl
+      mx-auto
+      px-6
+      py-5
+      flex
+      items-center
+      justify-between
+    ">
+
+        <p class="text-zinc-500 text-sm">
+          Victor Gakuo
+        </p>
+
+        <div class="flex items-center gap-6">
+
+          <!-- GITHUB -->
+
+          <a href="https://github.com/c3po-jpeg" target="_blank" class="text-zinc-500 hover:text-white transition">
+            <img src="/portfolio/icons/github.svg" alt="GitHub" class="w-8 h-8" />
+          </a>
+
+          <!-- LINKEDIN -->
+
+          <a href="https://www.linkedin.com/in/victor-gakuo-91b71636a/"
+            class="text-zinc-500 hover:text-white transition">
+            <img src="/portfolio/icons/linkedin.svg" alt="LinkedIn" class="w-8 h-8" />
+          </a>
+
+          <!-- EMAIL -->
+
+          <a href="mailto:vickkaniu0@gmail.com" class="text-zinc-500 hover:text-white transition">
+            <img src="/portfolio/icons/gmail.png" alt="Email" class="w-8 h-8" />
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
